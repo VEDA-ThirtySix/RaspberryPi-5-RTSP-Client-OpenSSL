@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EditDialog</class>
+ <widget class="QDialog" name="EditDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(255, 255, 255);
+border:2px solid rgb(243,115,33);</string>
+  </property>
+  <widget class="QLineEdit" name="lineEdit_name">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>150</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color:  rgb(0, 0, 0);
+	background:white;
+	border:1px solid rgb(243,115,33);
+	font: 500 12pt &quot;Quicksand Medium&quot;;</string>
+   </property>
+   <property name="placeholderText">
+    <string>type your name</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_plate">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>200</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color:  rgb(0, 0, 0);
+	background:white;
+	border:1px solid rgb(243,115,33);
+	font: 500 12pt &quot;Quicksand Medium&quot;;</string>
+   </property>
+   <property name="placeholderText">
+    <string>type your plate number</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_home">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>250</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color:  rgb(0, 0, 0);
+	background:white;
+	border:1px solid rgb(243,115,33);
+	font: 500 12pt &quot;Quicksand Medium&quot;;</string>
+   </property>
+   <property name="placeholderText">
+    <string>type your home address</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_phone">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>300</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color:  rgb(0, 0, 0);
+	background:white;
+	border:1px solid rgb(243,115,33);
+	font: 500 12pt &quot;Quicksand Medium&quot;;</string>
+   </property>
+   <property name="placeholderText">
+    <string>type your phone number</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_prev">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>360</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	font: 300 bold 13pt &quot;Quicksand Light&quot;;
+	color:  rgb(243,115,33);
+	background:rgba(243,115,33,0.2);
+	border:1px solid rgb(243,115,33);
+}
+QPushButton:hover {
+	color:  rgb(255, 255, 255);
+	background-color:rgba(243,115,33,0.3);
+	border:1px solid rgb(243,115,33);
+	font: 500 12pt &quot;Quicksand Medium&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>PREV</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_edit">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>360</y>
+     <width>150</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	font: 300 bold 13pt &quot;Quicksand Light&quot;;
+	color:  rgb(243,115,33);
+	background:rgba(243,115,33,0.2);
+	border:1px solid rgb(243,115,33);
+}
+QPushButton:hover {
+	color:  rgb(255, 255, 255);
+	background-color:rgba(243,115,33,0.3);
+	border:1px solid rgb(243,115,33);
+	font: 500 12pt &quot;Quicksand Medium&quot;;
+}</string>
+   </property>
+   <property name="text">
+    <string>EDIT</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_title">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>50</y>
+     <width>481</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color:  rgb(243,115,33);
+	background-color: rgba(243,115,33,0.3);
+	border:none;
+	font: 500 9pt &quot;Quicksand Medium&quot;;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:26pt; font-weight:700;&quot;&gt;EDIT&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignmentFlag::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_name">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>150</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color:  rgb(243,115,33);
+	background-color: none;
+	border:none;
+	font: 500 9pt &quot;Quicksand Medium&quot;;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:700;&quot;&gt;NAME&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_plate">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>200</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color:  rgb(243,115,33);
+	background-color: none;
+	border:none;
+	font: 500 9pt &quot;Quicksand Medium&quot;;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:700;&quot;&gt;PLATE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_home">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>250</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color:  rgb(243,115,33);
+	background-color: none;
+	border:none;
+	font: 500 9pt &quot;Quicksand Medium&quot;;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:700;&quot;&gt;HOME&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_phone">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>300</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color:  rgb(243,115,33);
+	background-color: none;
+	border:none;
+	font: 500 9pt &quot;Quicksand Medium&quot;;</string>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:700;&quot;&gt;PHONE&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

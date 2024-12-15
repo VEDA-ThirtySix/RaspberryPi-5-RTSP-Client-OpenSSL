@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1052</width>
+    <height>711</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>60</y>
+      <width>1021</width>
+      <height>631</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QTabWidget#tabWidget::pane {
+    background-color: rgb(255, 255, 255);
+    /*border: none;*/
+	border:1px dashed rgb(243,115,33);
+	
+}
+
+QTabWidget#tabWidget &gt; QTabBar::tab {
+    font: 9pt &quot;Sans Serif&quot;;
+    background-color: rgba(243,115,33,0.5);
+    color: transparent;
+    padding: 0px;
+    margin-right: 5px;
+    width: 120px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+QTabWidget#tabWidget &gt; QTabBar::tab:first {
+    background-color: rgba(243,115,33,0.1);
+    background-image: url(:/images/video2.png);
+    color: transparent;
+}
+
+QTabWidget#tabWidget &gt; QTabBar::tab:first:selected {
+    background: none;
+    background-color: rgba(243,115,33,0.5);
+    background-image: transparent;
+    color: rgb(0, 0, 0);
+    font: 500 12pt &quot;Quicksand Medium&quot;;
+    padding: 0px;
+}
+
+QTabWidget#tabWidget &gt; QTabBar::tab:last {
+    background-color: rgba(243,115,33,0.1);
+    background-image: url(:/images/search5.png);
+    color: transparent;
+}
+
+QTabWidget#tabWidget &gt; QTabBar::tab:last:selected {
+    background: none;
+    background-color: rgba(243,115,33,0.5);
+    background-image: none;
+    color: rgb(0, 0, 0);
+    font: 500 12pt &quot;Quicksand Medium&quot;;
+    padding: 0px;
+}
+
+QTabWidget#tabWidget &gt; QTabBar::tab:hover {
+    background: none;
+    background-color: rgb(223, 223, 223);
+    background-image: none;
+    color: rgb(255, 255, 255);
+    font: 500 10pt &quot;Quicksand Medium&quot;;
+}</string>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="currentIndex">
+     <number>-1</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="guideLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1051</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Quicksand Medium</family>
+      <pointsize>13</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+font: 500 bold 13pt &quot;Quicksand Medium&quot;;
+background-color: rgba(243,115,33,0.5);
+border-bottom:2px solid rgb(243,115,33);
+text-align: center; /* 수평 중앙 정렬 */</string>
+    </property>
+    <property name="text">
+     <string>LicensePlate Detection CCTV App</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="teamLogo">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>0</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>UnDotum</family>
+      <pointsize>9</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:transparent;
+color: rgb(255, 255, 255);
+
+font: bold 9pt &quot;UnDotum&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Thirty-Six Stratagems </string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hanwhaLogo">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>UnDotum</family>
+      <pointsize>9</pointsize>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:transparent;
+color: rgb(255, 255, 255);
+
+font: bold 9pt &quot;UnDotum&quot;;</string>
+    </property>
+    <property name="text">
+     <string> HanwhaVision</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_host">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>60</y>
+      <width>221</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">	color:  rgb(243,115,33);
+	background-color:white;
+	border:1px solid rgb(243,115,33);
+	font: 500 9pt &quot;Quicksand Medium&quot;;
+</string>
+    </property>
+    <property name="placeholderText">
+     <string>Enter HOST IP Address</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_apply">
+    <property name="geometry">
+     <rect>
+      <x>930</x>
+      <y>60</y>
+      <width>111</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color:rgba(243,115,33,0.5);
+border:1px solid rgb(243,115,33);
+font: 500 bold 10pt &quot;Quicksand Medium&quot;;</string>
+    </property>
+    <property name="text">
+     <string>APPLY</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

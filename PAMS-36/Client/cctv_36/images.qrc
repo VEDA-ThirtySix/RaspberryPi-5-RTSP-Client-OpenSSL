@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>list.png</file>
+        <file>camera-recorder.png</file>
+        <file>search5.png</file>
+        <file>video2.png</file>
+        <file>play.png</file>
+        <file>calendar.png</file>
+        <file>search.png</file>
+        <file>pause.png</file>
+        <file>stop.png</file>
+        <file>stop2.png</file>
+        <file>pause2.png</file>
+        <file>play2.png</file>
+        <file>PAMS1.png</file>
+        <file>bell.png</file>
+        <file>bell_none.png</file>
+        <file>gate_close.png</file>
+        <file>gate_open.png</file>
+    </qresource>
+</RCC>
